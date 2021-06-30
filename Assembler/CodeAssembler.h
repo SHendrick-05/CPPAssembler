@@ -8,7 +8,7 @@ namespace Assembler
 		public ref class Instruction
 		{
 		public: short Opcode;
-		public: array<String^>^ Operands;
+		public: List<String^>^ Operands;
 		public: String^ Label;
 		};
 

@@ -137,10 +137,12 @@ void Assembler::CodeHandler::runInstruction()
 			HLT = true;
 			break;
 			}
-		default: // Unknown
+		default: 
+			{// Unknown
 			break;
-			}
-			IAR++;
+			}			
+	}
+	IAR++;
 }
 
 int Assembler::CodeHandler::TakeInput()
