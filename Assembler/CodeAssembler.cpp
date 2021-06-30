@@ -40,7 +40,7 @@ Assembler::Instruction^ Assembler::CodeAssembler::DecodeInstruction(String^ inpu
 		{
 			splitInput[i] = splitInput[i]->ToUpper();
 		}
-		result->Operands = splitInput->ToArray();
+		result->Operands = splitInput;
 	}
 
 	// Return the completed instruction

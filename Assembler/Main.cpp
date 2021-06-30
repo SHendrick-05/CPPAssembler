@@ -49,8 +49,8 @@ void Assembler::Main::enter_Click(Object^ sender, EventArgs^ e) {
 		{
 			instrList->Add(decInstr);
 		}
-		
-		CodeHandler::instrList = instrList;
-		CodeHandler::Start(this);
 	}
+			
+	CodeHandler::instrList = instrList;
+	CodeHandler::Start(this);
 }
